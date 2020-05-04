@@ -1,0 +1,8 @@
+name: Name
+author: Author
+version: 1.0
+main: path to main
+depend: [DependPlugin1, DependPlugin2]
+commands:
+  template_command:
+    description: template_command_description
