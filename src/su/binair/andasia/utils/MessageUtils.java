@@ -19,9 +19,4 @@ public class MessageUtils
 	{
 		player.sendMessage(ChatColor.translateAlternateColorCodes('&', PrefixAPI.getPrefix() + " " + "&6» &a" + text));
 	}
-	
-	public static String getMessage(YmlConfiguration config, String info)
-	{
-		return ChatColor.translateAlternateColorCodes('&', config.getConfig().getString(info));
-	}
 }

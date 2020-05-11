@@ -8,11 +8,6 @@ import org.bukkit.event.Listener;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
 import su.binair.andasia.config.YmlConfiguration;
-import su.binair.andasia.effects.runnable.FullArmoredArmor;
-import su.binair.andasia.effects.runnable.TripleAliageBoots;
-import su.binair.andasia.effects.runnable.TripleAliageChestplate;
-import su.binair.andasia.effects.runnable.TripleAliageHelmet;
-import su.binair.andasia.effects.runnable.TripleAliageLeggings;
 
 public class Main extends JavaPlugin
 {
@@ -29,30 +24,14 @@ public class Main extends JavaPlugin
 		this.plugin = this;
 		
 		registerConfigs();
-		
 		registerCommands();
-		
 		registerEvents();
-		
-		registerRunnables();
-		
 	}
 	
 	public static void registerEvents()
 	{
         //getPlugin().getServer().getPluginManager().registerEvents((Listener)new CrashListener(), getPlugin());
 
-	}
-	
-	public static void registerRunnables()
-	{
-        
-		//getPlugin().getServer().getScheduler().runTaskTimer(getPlugin(), new TripleAliageHelmet(getInstance()), 10L, 10L);
-		//getPlugin().getServer().getScheduler().runTaskTimer(getPlugin(), new TripleAliageChestplate(getInstance()), 10L, 10L);
-		//getPlugin().getServer().getScheduler().runTaskTimer(getPlugin(), new TripleAliageLeggings(getInstance()), 10L, 10L);
-		//getPlugin().getServer().getScheduler().runTaskTimer(getPlugin(), new TripleAliageBoots(getInstance()), 10L, 10L);
-		
-		//getPlugin().getServer().getScheduler().runTaskTimer(getPlugin(), new FullArmoredArmor(getInstance()), 10L, 10L);
 	}
 
 	public static void registerCommands()
