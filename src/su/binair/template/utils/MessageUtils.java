@@ -1,12 +1,11 @@
-package su.binair.andasia.utils;
+package su.binair.template.utils;
 
 import org.apache.commons.lang.StringEscapeUtils;
 import org.bukkit.ChatColor;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.Player;
-import su.binair.andasia.Main;
-import su.binair.andasia.config.YmlConfiguration;
-import su.binair.api.PrefixAPI;
+
+import su.binair.template.Main;
 
 public class MessageUtils 
 {
@@ -17,6 +16,6 @@ public class MessageUtils
 	
 	public static void sendMessage(Player player, String text)
 	{
-		player.sendMessage(ChatColor.translateAlternateColorCodes('&', PrefixAPI.getPrefix() + " " + "&6» &a" + text));
+		player.sendMessage(ChatColor.translateAlternateColorCodes('&',"&6» &a" + text));
 	}
 }

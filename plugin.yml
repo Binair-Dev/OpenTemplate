@@ -1,7 +1,7 @@
 name: Name
 author: Author
 version: 1.0
-main: path to main
+main: su.binair.template.Main
 commands:
   template_command:
     description: template_command_description
